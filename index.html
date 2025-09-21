@@ -3,36 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nuha MAF — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <title>My  Personal PortFolio Website </title>
+  <!--boxicons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!--css-->
+  <link rel="stylesheet"  href="style.css">
+
+
+ <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
 
+<!--header-->
+<header class="active">
+<a href="#" class="logo">NUHA.MAF</a>
 
-      <nav class="navBar">
-           <a href="#" class="logo">NUHA.MAF</a>
-           <ul>
-                 <li class="active"><a href="#">Home</a></li>
-                 <li><a href="#about">About</a></li>
-                 <li><a href="#">Portfolio</a></li>
-                 <li><a href="#">Project</a></li>
-                 <li><a href="#">Certificates</a></li>
-                 <li><a href="#">Contact</a></li>
-           </ul>
-       </nav>
+<nav>
 
-       <div class="bars-animation">
-        <div class="bar" style="--i:6;"></div>
-        <div class="bar" style="--i:5;"></div>
-        <div class="bar" style="--i:4;"></div>
-        <div class="bar" style="--i:3;"></div>
-        <div class="bar" style="--i:2;"></div>
-        <div class="bar" style="--i:1;"></div>
-        </div>
+  <a href="#" class="active">HOME</a>
+  <a href="#">SERVICES</a>
+  <a href="#">RESUME</a>
+  <a href="#">PORTFOLIO</a>
+  <a href="#">CONTACT</a>
+</nav>
+</header> 
+<!--bars background-->
+<div class="bars-box active">
+    <div class="bar" style="--i:6;"> </div>
+    <div class="bar" style="--i:5;"> </div>
+    <div class="bar" style="--i:4;"> </div>
+    <div class="bar" style="--i:3;"> </div>
+    <div class="bar" style="--i:2;"> </div>
+    <div class="bar" style="--i:1;"> </div>
 
-  <section class="home" id="home">
+</div>
+
+<section class="home active" id="home">
     
     <div class="home-info">
         <h1>M.A.FATHIMA NUHA</h1>
@@ -47,18 +55,18 @@
         <p>Hello! I’m an undergraduate Software Engineering student at Sabaragamuwa University, Sri Lanka, with a passion for coding, web development, and cloud technologies. I enjoy turning ideas into projects, learning new skills, and exploring innovative solutions while advancing my academic journey.
             This portfolio highlights my key projects, achievements, skills, and certificates. You can find my contact information below to connect or collaborate.</p>
         <div class="btn-sci">
-            <a href="resume.png" class="btn">Download RESUME</a>  
+            <a href="resume.png" class="btn" target="_blank">DOWNLOAD RESUME</a>  
              <div class="sci">
-             <a href="https://www.linkedin.com/in/fathimanuha-mohamedameen/">
+             <a href="https://www.linkedin.com/in/fathimanuha-mohamedameen/" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
              </a>
-             <a href="https://github.com/mohamedAmeenFathimaNuha">
+             <a href="https://github.com/mohamedAmeenFathimaNuha" target="_blank">
              <ion-icon name="logo-github"></ion-icon>
             </a>
-            <a href="https://wa.me/94o775281956">
+            <a href="https://wa.me/94o775281956" target="_blank">
                 <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
-            <a href="https://www.instagram.com/f.nuha_m.ameen/">
+            <a href="https://www.instagram.com/f.nuha_m.ameen/" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
             </a>
             </div>
@@ -73,43 +81,393 @@
             </div>
         </div>
     </div>
-    
-    
-  </section>
-
-
-  <!-- About Section -->
-<section id="about" class="about">
-  <div class="about-container">
-    <h2>...About Me...</h2>
-    
-    <p>
-      I am an undergraduate <b>Software Engineering student</b> at 
-      <b>Sabaragamuwa University of Sri Lanka</b>, with a passion for creating 
-      innovative and user-friendly software solutions. I studied at 
-      <b>Kinniya Muslim Ladies College, Trincomalee</b>, where I built a strong 
-      academic foundation. My soft skills include teamwork, communication, and 
-      problem-solving, while my hard skills cover programming, web development, 
-      database management, and UI/UX design. I enjoy learning new skills and 
-      constantly improving myself in both academic and practical areas.
-    </p>
-
-    <br> <!-- small gap between paragraphs -->
-
-    <p>
-      My technical interests include <b>Artificial Intelligence, Web Development, 
-      and Software Design</b>. I am familiar with tools and technologies such as 
-      <b>Canva, Figma, Visual Studio Code, Git, and IntelliJ</b>. I enjoy 
-      exploring new technologies, working on creative projects, and developing 
-      solutions that can make a positive impact. I believe continuous learning 
-      and adapting to new technologies are the keys to success in today’s 
-      fast-growing IT industry.
-    </p>
-    
-    <!-- Image Example -->
-    
-  </div>
 </section>
 
+<!--proiect section-->
+<section class="projects">
+    <h2 class="heading">MY <span> SERVICES</span></h2>
+    <div class="projects-container">
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bx-code-alt' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>Web Development</h3>
+        <p>I design and build fast, responsive and secure websites using <span>HTML, CSS, JavaScript, React, and Node.js.</span></p>
+     </div>
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bxs-paint' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>UI/UX Design</h3>
+        <p>I create user-friendly layouts and prototypes using <span>Figma, Adobe XD, and Photoshop </span>to make websites and apps look great and easy to use.</p>
+     </div>
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bx-palette' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>Graphic Design</h3>
+        <p>I craft attractive logos, banners and visuals with <span>Adobe Illustrator, Photoshop, and Canva </span>to help brands stand out.</p>
+      </div>
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bx-trending-up' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>SEO</h3>
+        <p>I improve websites to load faster and rank higher on Google using <span>Google Analytics, SEMrush and keyword research tools.</span></p>
+     </div>
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bx-video-recording' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>AI Integration</h3>
+        <p>I add AI features such as chatbots, smart recommendations and automation using <span>OpenAI API, TensorFlow, and Python.</span></p>
+     </div>
+     <div class="projects-box">
+        <div class="icon">
+        <i class='bx bx-camera' ></i>
+        <a href="#"><i class='bx bx-arrow-back' ></i></a>
+        </div>
+        <h3>AI Data Analysis</h3>
+        <p>I analyse data, find patterns and give insights for better decisions using <span>Python, Pandas, and Machine Learning models.</span></p>
+     </div>
+    </div>
+</section>
+
+
+<!--resume section-->
+<section class="resume ">
+    <div class="resume-container">
+        <div class="resume-box">
+            <h2>WHAT MAKES ME UNIQUE</h2>
+            <p class="desc">Passionate about technology and learning, I deliver creative solutions with real impact.</p>
+            <button class="resume-btn active">Experience</button>
+            <button class="resume-btn">Education</button>
+            <button class="resume-btn">Skills</button>
+            <button class="resume-btn">About Me</button>
+       </div>
+      <div class=" resume-box">
+        <!-- EXPERIENCE -->
+        <div class="resume-detail Experience active">
+            <h2 class="heading">My <span>Experience</span></h2>
+            <p class="desc">Practical projects and online courses that shaped my professional growth.</p>
+            <div class="resume-list">
+                <div class="resume-item">
+                    <p class="year">2024-2025</p>
+                    <h3>Cybersecurity Basics</h3>
+                    <p class="company">YouTube</p>
+                    <p>Explored core concepts of online safety, data protection, and secure coding practices.</p>
+                </div>
+                <div class="resume-item">
+                    <p class="year">2024-2025</p>
+                    <h3>React Frontend Development</h3>
+                    <p class="company">YouTube</p>
+                    <p>Built dynamic user interfaces and learned modern frontend workflows.</p>
+                </div> 
+                <div class="resume-item">
+                    <p class="year">2024-2025</p>
+                    <h3>Database Systems & SQL</h3>
+                    <p class="company">YouTube</p>
+                    <p>Studied relational databases, queries, and data management principles.</p>
+                </div> 
+                <div class="resume-item">
+                    <p class="year">2023-2024</p>
+                    <h3>Python for Beginners</h3>
+                    <p class="company">YouTube</p>
+                    <p>Strengthened fundamentals in Python programming and logical problem solving.</p>
+                </div> 
+                <div class="resume-item">
+                    <p class="year">2023-2024</p>
+                    <h3>JavaScript Mastery</h3>
+                    <p class="company">YouTube</p>
+                    <p>Gained hands-on experience with interactive web applications.</p>
+                </div> 
+                <div class="resume-item">
+                    <p class="year">2023-2024</p>
+                    <h3>Web Development Bootcamp</h3>
+                    <p class="company">YouTube</p>
+                    <p>Learned HTML, CSS, and JavaScript to build responsive websites.</p>
+                </div> 
+            </div>
+        </div>
+
+        
+        <!-- EDUCATION -->
+<div class="resume-detail Education">
+    <h2 class="heading">My <span>Education</span></h2>
+    <p class="desc">Formal studies and online courses that built my foundation in IT.</p>
+    <div class="resume-list">
+        <!-- University -->
+        <div class="resume-item">
+            <p class="year">2024 - 2028</p>
+            <h3>BSc (Hons) in Software Engineering</h3>
+            <p class="company">Sabaragamuwa University of Sri Lanka</p>
+            <p>Currently pursuing a bachelor’s degree in Software Engineering with a focus on programming, software design, and IT systems.</p>
+        </div>
+        
+        <!-- School -->
+        <div class="resume-item">
+            <p class="year">2007 - 2020</p>
+            <h3>Advanced Level – Physical Science</h3>
+            <p class="company">T/Kinniya Muslim Ladies College</p>
+            <p>Completed secondary education specializing in Mathematics, Physics, and ICT.</p>
+        </div>
+
+        <!-- Online Courses -->
+        <div class="resume-item">
+            <p class="year">2023</p>
+            <h3>Responsive Web Design</h3>
+            <p class="company">freeCodeCamp (Free Online Course)</p>
+            <p>Learned HTML, CSS, and responsive design principles through hands-on projects.</p>
+        </div>
+        
+        <div class="resume-item">
+            <p class="year">2023</p>
+            <h3>Python for Everybody</h3>
+            <p class="company">Coursera (Free Online Course)</p>
+            <p>Gained practical skills in Python programming, data handling, and problem-solving.</p>
+        </div>
+
+        <div class="resume-item">
+            <p class="year">2022</p>
+            <h3>JavaScript Fundamentals</h3>
+            <p class="company">YouTube / FreeCodeCamp</p>
+            <p>Covered the basics of JavaScript, DOM manipulation, and interactive web apps.</p>
+        </div>
+        
+        <div class="resume-item">
+            <p class="year">2022</p>
+            <h3>Database Systems & SQL</h3>
+            <p class="company">Udemy (Free Course)</p>
+            <p>Learned relational database design, queries, and SQL commands for data management.</p>
+        </div>
+    </div>
+</div>
+
+
+        <!-- SKILLS -->
+        <div class="resume-detail skills">
+            <h2 class="heading">My <span>Skills</span></h2>
+            <p class="desc">The blend of technical knowledge and problem-solving abilities I’ve developed.</p>
+            <div class="resume-list">
+                <div class="resume-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+                <div class="resume-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+                <div class="resume-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+                <div class="resume-item"><i class='bx bxl-c-plus-plus'></i><span>C</span></div>
+                <div class="resume-item"><i class='bx bxl-java'></i><span>Java</span></div>
+                <div class="resume-item"><i class='bx bxl-python'></i><span>Python</span></div>
+                <div class="resume-item"><i class='bx bxl-react'></i><span>React</span></div>
+                <div class="resume-item"><i class='bx bxl-git'></i><span>Git</span></div>
+
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div class="resume-detail about">
+  <h2 class="heading">About <span>Me</span></h2>
+
+  <p class="desc">
+    A glimpse into my journey of growth, guided by strong values and an unwavering passion for technology and innovation.
+    <span>
+    I strive to transform ideas into meaningful digital solutions that create a positive impact on people’s lives.
+    </span>
+  </p>
+
+  <div class="resume-list">
+    <div class="resume-item"><p>NAME <span>MOHAMED AMEEN FATHIMA NUHA</span></p></div>
+    <div class="resume-item"><p>AGE <span>24 YEARS OLD</span></p></div>
+    <div class="resume-item"><p>GENDER <span>FEMALE</span></p></div>
+    <div class="resume-item"><p>STATUS <span>SINGLE</span></p></div>
+    <div class="resume-item"><p>NATIONALITY <span>SRI LANKA</span></p></div>
+    <div class="resume-item"><p>CITY <span>TRINCOMALEE</span></p></div>
+    <div class="resume-item"><p>PHONE <span>(+94) 0775281956</span></p></div>
+    <div class="resume-item"><p>EMAIL <span>fathimanuhama@gmail.com</span></p></div>
+    <div class="resume-item"><p>LANGUAGES <span>ENGLISH, TAMIL, SINHALA</span></p></div>
+  </div>
+
+  <p class="desc">
+    A passionate Software Engineering student with a strong interest in innovation, problem-solving, and building meaningful technology solutions.
+  </p>
+</div>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+<section class="portfolio">
+    <h2 class="heading">LATEST <span>PROJECT</span></h2>
+    <div class="portfolio-container">
+
+        <div class="portfolio-box">
+            
+            <div class="portfolio-detail active">
+                <p class="numb">01</p>
+                <h3>Personal Portfolio Website</h3>
+                <p>Created a responsive portfolio website using HTML, CSS, and JavaScript to showcase my projects and skills.</p>
+                <div class="tech">
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-detail">
+                <p class="numb">02</p>
+                <h3>E-Commerce Landing Page</h3>
+                <p>Built a simple online store landing page using HTML, CSS, and Bootstrap with product cards and navigation.</p>
+                <div class="tech">
+                    <p>HTML, CSS, Bootstrap</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-detail">
+                <p class="numb">03</p>
+                <h3>Blog Website</h3>
+                <p>Developed a basic blog website using HTML, CSS, and JavaScript with posts, comments, and navigation.</p>
+                <div class="tech">
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-detail">
+                <p class="numb">04</p>
+                <h3>Interactive To-Do App</h3>
+                <p>Created a web-based to-do list app using HTML, CSS, and JavaScript, allowing users to add, edit, and delete tasks.</p>
+                <div class="tech">
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-detail">
+                <p class="numb">05</p>
+                <h3>Simple Calculator Web App</h3>
+                <p>Built a basic calculator using HTML, CSS, and JavaScript to perform simple arithmetic operations.</p>
+                <div class="tech">
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+            <div class="portfolio-detail">
+                <p class="numb">06</p>
+                <h3>Quiz Web App</h3>
+                <p>Developed a browser-based quiz app using HTML, CSS, and JavaScript with interactive questions and scoring.</p>
+                <div class="tech">
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+                <div class="live-github">
+                    <a href="#"><i class="bx bx-arrow-back"></i><span>Live Project</span></a>
+                    <a href="#"><i class="bx bxl-github"></i><span>Github Repository</span></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="portfolio-box">
+            <div class="portfolio-carousel">
+                <div class="img-slide">
+                    <div class="img-item active">
+                        <img src="img1.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="img2.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="img3.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="img4.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="img5.png" alt="">
+                    </div>
+                    <div class="img-item">
+                        <img src="img1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="navigation">
+               <button class="arrow-left disabled"><i class='bx bx-chevron-left'></i><span class="hidden-text">dummy</span></button>
+               <button class="arrow-right"><i class='bx bx-chevron-right'></i> <span class="hidden-text">dummy</span></button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!--contact section-->
+<section class="contact ">
+    <div class="contact-container">
+        <div class="contact-box">
+            <h2> Let’s Collaborate </h2>
+            <p class="desc">I am open to professional opportunities, collaborations, and networking. Please feel free to reach out via email or phone to discuss potential projects or partnerships.</p>
+        
+            <div class="contact-details">
+                <i class='bx bx-phone'></i>
+                <div class="details">
+                    <p>Phone</p>
+                    <p>(+94) 0775281956</p>
+                </div>
+            </div>
+            <div class="contact-details">
+                <i class='bx bx-envelope' ></i>
+                <div class="details">
+                    <p>Email</p>
+                    <p>fathimanuhama@gmail.com</p>
+                </div>
+            </div>
+           
+            <div class="contact-details">
+                <i class='bx bx-map'></i>
+                <div class="details">
+                    <p>Address</p>
+                    <p>Trincomalee,Amaan Street,Knniya-02</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-box">
+            <form action="">
+                <h2 class="heading">Contact<span>Me!</span></h2>
+                <div class="field-box">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Phone Number" required>
+                    <input type="text" placeholder="Email Subject" required>
+                    <textarea name="" id="" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        
+    </div>
+</section>
+
+<!--custom js-->
+<script src="script.js"></script>
 </body>
 </html>
